@@ -23,7 +23,7 @@ var MelonjsGenerator = yeoman.generators.Base.extend({
     console.log(this.yeoman);
 
     // replace it with a short and sweet description of your generator
-    console.log(chalk.magenta('Hello! I hope you can make great games'));
+    console.log(chalk.magenta('Hi! It\'s time to build great games with MelonJS'));
 
     var prompts = [
       {
@@ -40,16 +40,35 @@ var MelonjsGenerator = yeoman.generators.Base.extend({
   },
 
   app: function () {
-    this.mkdir('app');
-    this.mkdir('app/templates');
+    this.mkdir('js');
+    this.mkdir('build');
+    this.mkdir('css');
+    this.mkdir('data');
+    this.mkdir('data/img');
+    this.mkdir('js/lib');
+    this.mkdir('js/screens');
+    // empty for now
+    this.mkdir('js/entities');
 
     this.copy('_package.json', 'package.json');
     this.copy('_bower.json', 'bower.json');
+    this.copy('_Gruntfile.js', 'Gruntfile.js');
+    this.copy('_Makefile', 'Makefile');
   },
 
   projectfiles: function () {
-    this.copy('editorconfig', '.editorconfig');
     this.copy('jshintrc', '.jshintrc');
+    this.copy('gitignore', '.gitignore');
+    this.copy('index.html', 'index.html');
+    this.copy('css/index.css', 'css/index.css');
+    this.copy('build/game.js', 'build/game.js');
+    this.copy('build/game-min.js', 'build/game-min.js');
+    this.copy('js/game.js', 'js/game.js');
+    this.copy('js/resources.js', 'js/resources.js');
+    this.copy('js/screens/play.js', 'js/screens/play.js');
+    this.copy('js/lib/melonJS-1.0.0-min.js', 'js/lib/melonJS-1.0.0-min.js');
+    this.copy('data/img/melonjs.png', 'data/img/melonjs.png');
+    this.copy('data/img/bg.png', 'data/img/bg.png');
   }
 });
 

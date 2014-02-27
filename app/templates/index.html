@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en" manifest="manifest.appcache">
+  <head>
+    <title>MelonJS</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta charset="UTF-8" />
+    <meta name="description" content=""/>
+    <meta name="keywords" content="game, html5, melonjs"/>
+    <meta name="robots" content="index, follow">
+    <meta property="og:image" content="" />
+    <meta property="og:title" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content="Yeoman MelonJS"/>
+  </head>
+
+  <body>
+    <div id="screen"></div>
+        <!-- melonJS Library -->
+    <script type="text/javascript" src="js/lib/melonJS-1.0.0-min.js" ></script>
+    <script type="text/javascript" src="build/game-min.js" ></script>
+    <!-- Bootstrap & Mobile optimization tricks -->
+    <script type="text/javascript">
+      window.onReady(function onReady() {
+        game.onload();
+
+        // Mobile browser hacks
+        if (me.device.isMobile && !navigator.isCocoonJS) {
+          // Prevent the webview from moving on a swipe
+          window.document.addEventListener("touchmove", function (e) {
+            e.preventDefault();
+            window.scroll(0, 0);
+            return false;
+          }, false);
+
+          // Scroll away mobile GUI
+          (function () {
+            window.scrollTo(0, 1);
+            me.video.onresize(null);
+          }).defer();
+
+          me.event.subscribe(me.event.WINDOW_ONRESIZE, function (e) {
+            window.scrollTo(0, 1);
+          });
+        }
+      });
+    </script>
+
+  </body>
+</html>

@@ -21,7 +21,17 @@ describe('melonjs generator', function () {
     var expected = [
       // add files you expect to exist here.
       '.jshintrc',
-      '.editorconfig'
+      '.gitignore',
+      'package.json',
+      'bower.json',
+      'Gruntfile.js',
+      'index.html',
+      'css/index.css',
+      'data/img/bg.png',
+      'data/img/melonjs.png',
+      'js/game.js',
+      'js/screens/play.js',
+      'js/lib/melonJS-1.0.0-min.js'
     ];
 
     helpers.mockPrompt(this.app, {
