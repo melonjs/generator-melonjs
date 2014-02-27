@@ -10,9 +10,13 @@ var MelonjsGenerator = yeoman.generators.Base.extend({
     this.pkg = yeoman.file.readJSON(path.join(__dirname, '../package.json'));
 
     this.on('end', function () {
-      if (!this.options['skip-install']) {
-        this.npmInstall();
-      }
+      var options = this.options;
+      this.installDependencies({
+        skipInstall: options['skip-install'],
+        callback: function () {
+          this.spawnCommand('grunt');
+        }.bind(this) // bind the callback to the parent scope
+      });
     });
   },
 
