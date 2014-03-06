@@ -21,7 +21,7 @@
   ],
   "keywords": [
     "yeoman-generator",
-    'melonjs'
+    "melonjs"
   ],
   "dependencies": {
     "yeoman-generator": "~0.16.0",
