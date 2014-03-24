@@ -4,11 +4,18 @@
   "description": "A MelonJS Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "ellisonleao/generator-melonjs",
+  "repository": {
+    "type": "git",
+    "url": "ellisonleao/generator-melonjs"
+  },
   "author": {
     "name": "Ellison Leão",
     "email": "ellisonleao@gmail.com",
     "url": "https://github.com/ellisonleao"
+  },
+  "bugs": {
+    "url" : "http://github.com/ellisonleao/generator-melonjs/issues",
+    "email" : "ellisonleao@gmail.com"
   },
   "engines": {
     "node": ">=0.10.0"
