@@ -6,7 +6,7 @@
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "ellisonleao/generator-melonjs"
+    "url": "melonjs/generator-melonjs"
   },
   "author": {
     "name": "Ellison Leão",
@@ -14,7 +14,7 @@
     "url": "https://github.com/ellisonleao"
   },
   "bugs": {
-    "url" : "http://github.com/ellisonleao/generator-melonjs/issues",
+    "url" : "http://github.com/melonjs/generator-melonjs/issues",
     "email" : "ellisonleao@gmail.com"
   },
   "engines": {

@@ -1,4 +1,4 @@
-# generator-melonjs [![Build Status](https://secure.travis-ci.org/ellisonleao/generator-melonjs.png?branch=master)](https://travis-ci.org/ellisonleao/generator-melonjs)
+# generator-melonjs [![Build Status](https://secure.travis-ci.org/melonjs/generator-melonjs.png?branch=master)](https://travis-ci.org/melonjs/generator-melonjs)
 
 > [Yeoman](http://yeoman.io) generator
 
