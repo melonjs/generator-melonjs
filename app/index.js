@@ -49,7 +49,6 @@ var MelonjsGenerator = yeoman.generators.Base.extend({
     this.mkdir('css');
     this.mkdir('data');
     this.mkdir('data/img');
-    this.mkdir('js/lib');
     this.mkdir('js/screens');
     // empty for now
     this.mkdir('js/entities');
@@ -70,7 +69,6 @@ var MelonjsGenerator = yeoman.generators.Base.extend({
     this.copy('js/game.js', 'js/game.js');
     this.copy('js/resources.js', 'js/resources.js');
     this.copy('js/screens/play.js', 'js/screens/play.js');
-    this.copy('js/lib/melonJS-1.0.0-min.js', 'js/lib/melonJS-1.0.0-min.js');
     this.copy('data/img/melonjs.png', 'data/img/melonjs.png');
     this.copy('data/img/bg.png', 'data/img/bg.png');
   }
