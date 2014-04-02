@@ -1,6 +1,6 @@
 {
   "name": "generator-melonjs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A MelonJS Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
@@ -9,7 +9,7 @@
     "url": "melonjs/generator-melonjs"
   },
   "author": {
-    "name": "Ellison Leão",
+    "name": "Ellison Leao",
     "email": "ellisonleao@gmail.com",
     "url": "https://github.com/ellisonleao"
   },
