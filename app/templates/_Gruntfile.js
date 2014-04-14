@@ -5,6 +5,7 @@ module.exports = function(grunt) {
     'js/game.js',
     'js/resources.js',
     'js/screens/play.js',
+    'js/debugPanel.js',
   ];
 
   // Project configuration.

@@ -31,6 +31,7 @@ describe('melonjs generator', function () {
       'data/img/melonjs.png',
       'js/game.js',
       'js/screens/play.js',
+      'js/debugPanel.js',
     ];
 
     helpers.mockPrompt(this.app, {

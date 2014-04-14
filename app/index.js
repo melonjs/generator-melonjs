@@ -69,6 +69,7 @@ var MelonjsGenerator = yeoman.generators.Base.extend({
     this.copy('js/game.js', 'js/game.js');
     this.copy('js/resources.js', 'js/resources.js');
     this.copy('js/screens/play.js', 'js/screens/play.js');
+    this.copy('js/debugPanel.js', 'js/debugPanel.js');
     this.copy('data/img/melonjs.png', 'data/img/melonjs.png');
     this.copy('data/img/bg.png', 'data/img/bg.png');
   }
