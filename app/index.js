@@ -23,11 +23,33 @@ var MelonjsGenerator = yeoman.generators.Base.extend({
   askFor: function () {
     var done = this.async();
 
-    // have Yeoman greet the user
-    console.log(this.yeoman);
-
     // replace it with a short and sweet description of your generator
-    console.log(chalk.magenta('Hi! It\'s time to build great games with MelonJS'));
+    console.log(chalk.bold.green('OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO'));
+    console.log(chalk.bold.green('OOOOOOOOOOOOOOOOOOOOOOOZ.   ~I7?  =OOOO'));
+    console.log(chalk.bold.green('OOOOOOOOOOOOOOOOOOO  ,OOOOOOOOOOOOI?OOO'));
+    console.log(chalk.bold.green('OOOOOOOOOOOOOOO, .OOOOOOOOOOOOOOOO, OOO'));
+    console.log(chalk.bold.green('OOOOOOOOOOOO, ~OOOOOOOOOOOOOOOOOO+  ,OO'));
+    console.log(chalk.bold.green('OOOOOOOOOO .OOOOOOOOOOOOOOOOOOOO     OO'));
+    console.log(chalk.bold.green('OOOOOOO, OOOOOOOOOOOOOOOOOOOOO:      OO'));
+    console.log(chalk.bold.green('OOOOO~ OOOOOOOOOOOOOOOOOOOOO+        OO'));
+    console.log(chalk.bold.green('OOOO OOOOOOOOOOOOOOOOOOOOO,         IOO'));
+    console.log(chalk.bold.green('OO..OOOOOOOOOOOOOOOOOOOO            OOO'));
+    console.log(chalk.bold.green('O,IOOOOOOOOOOOOOOOOO?              OOOO'));
+    console.log(chalk.bold.green('O OOOOOOOOOOOOOOZ                 ?OOOO'));
+    console.log(chalk.bold.green('O ZOOOOOOOOO~                    ZOOOOO'));
+    console.log(chalk.bold.green('OO                              OOOOOOO'));
+    console.log(chalk.bold.green('OOO:                          OOOOOOOOO'));
+    console.log(chalk.bold.green('OOOOO                       OOOOOOOOOOO'));
+    console.log(chalk.bold.green('OOOOOOO~                 ZOOOOOOOOOOOOO'));
+    console.log(chalk.bold.green('OOOOOOOOOOO7.       ~OOOOOOOOOOOOOOOOOO'));
+    console.log(chalk.bold.green('OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO'));
+    console.log(chalk.bold.green('OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO'));
+    console.log(chalk.yellow("• ▌ ▄ ·. ▄▄▄ .▄▄▌         ▐ ▄  ▐▄▄▄.▄▄ · "));
+    console.log(chalk.yellow("·██ ▐███▪▀▄.▀·██•  ▪     •█▌▐█  ·██▐█ ▀. "));
+    console.log(chalk.yellow("▐█ ▌▐▌▐█·▐▀▀▪▄██▪   ▄█▀▄ ▐█▐▐▌▪▄ ██▄▀▀▀█▄"));
+    console.log(chalk.yellow("██ ██▌▐█▌▐█▄▄▌▐█▌▐▌▐█▌.▐▌██▐█▌▐▌▐█▌▐█▄▪▐█"));
+    console.log(chalk.yellow("▀▀  █▪▀▀▀ ▀▀▀ .▀▀▀  ▀█▄▀▪▀▀ █▪ ▀▀▀• ▀▀▀▀ "));
+    console.log('Hi! It\'s time to build great games with MelonJS');
 
     var prompts = [
       {
