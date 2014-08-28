@@ -38,7 +38,7 @@ $ yo melonjs
 Running the game
 
 ```
-$ make run
+$ grunt connect:keepalive
 ```
 
 ### Getting To Know Yeoman
