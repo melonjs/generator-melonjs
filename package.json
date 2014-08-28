@@ -1,6 +1,6 @@
 {
   "name": "generator-melonjs",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A MelonJS Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
