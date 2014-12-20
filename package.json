@@ -1,12 +1,12 @@
 {
   "name": "generator-melonjs",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A MelonJS Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "melonjs/generator-melonjs"
+    "url": "git://github.com/melonjs/generator-melonjs"
   },
   "author": {
     "name": "Ellison Leao",

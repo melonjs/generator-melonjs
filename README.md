@@ -38,10 +38,10 @@ $ yo melonjs
 Running the game
 
 ```
-$ grunt connect:keepalive
+$ grunt connect
 ```
 
-Open the browser in http://localhost:8889
+Open the browser in http://localhost:8001
 
 ### Getting To Know Yeoman
 

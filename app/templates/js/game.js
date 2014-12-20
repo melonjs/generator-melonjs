@@ -4,7 +4,7 @@ var game = {
     },
 
     'onload': function() {
-        if (!me.video.init("screen", 800, 600, true, 'auto')) {
+        if (!me.video.init("screen", me.video.CANVAS, 800, 600, true, 'auto')) {
             alert("Your browser does not support HTML5 canvas.");
             return;
         }
