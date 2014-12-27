@@ -11,17 +11,17 @@
     <meta name="keywords" content="game, html5, melonjs"/>
     <meta name="robots" content="index, follow">
     <meta property="og:image" content="" />
-    <meta property="og:title" content=""/>
+    <meta property="og:title" content="<%= _.slugify(gameName) %>"/>
     <meta property="og:url" content=""/>
-    <meta property="og:site_name" content="Yeoman MelonJS"/>
+    <meta property="og:site_name" content="<%= _.slugify(gameName) %>"/>
   </head>
 
   <body>
     <div id="screen"></div>
         <!-- melonJS Library -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/melonjs/1.1.0/melonJS.min.js" ></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/melonjs/2.0.2/melonJS.min.js" ></script>
     <script type="text/javascript" src="js/debugPanel.js" ></script>
-    <script type="text/javascript" src="build/game-min.js" ></script>
+    <script type="text/javascript" src="build/game.js" ></script>
     <!-- Bootstrap & Mobile optimization tricks -->
     <script type="text/javascript">
       window.onReady(function onReady() {

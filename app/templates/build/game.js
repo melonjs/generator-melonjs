@@ -53,7 +53,8 @@ game.PlayScreen = me.ScreenObject.extend({
         me.game.world.addChild(this.bg, 1);
         me.game.world.addChild(this.logo, 2);
 
-        this.logo.resize(0.1);
+        this.logo.scale(0.1);
+
         var tween = new me.Tween(this.logo.scale).to({x: 2, y:2}, 3000)
             .repeat( Infinity )
             .yoyo(true)

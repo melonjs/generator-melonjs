@@ -1,7 +1,7 @@
 {
   "name": "generator-melonjs",
-  "version": "0.1.5",
-  "description": "A MelonJS Yeoman generator",
+  "version": "0.2.0",
+  "description": "A MelonJS game Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
   "repository": {
