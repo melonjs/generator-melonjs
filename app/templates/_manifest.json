@@ -1,0 +1,20 @@
+{
+  "name": "<%= name %>",
+  "icons": [
+    {
+      "src": "data/img/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "density": "3.0"
+    },
+    {
+      "src": "data/img/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "density": "4.0"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "portrait"
+}

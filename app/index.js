@@ -26,31 +26,26 @@ var MelonjsGenerator = yeoman.generators.Base.extend({
         var done = this.async();
 
         // replace it with a short and sweet description of your generator
-        console.log(chalk.bold.green('OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO'));
-        console.log(chalk.bold.green('OOOOOOOOOOOOOOOOOOOOOOOZ.     ~I7?    =OOOO'));
+        console.log(chalk.bold.green('OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO00'));
+        console.log(chalk.bold.green('OOOOOOOOOOOOOOOOOOOOOOOZ. I7? =OOOO000000'));
         console.log(chalk.bold.green('OOOOOOOOOOOOOOOOOOO    ,OOOOOOOOOOOOI?OOO'));
-        console.log(chalk.bold.green('OOOOOOOOOOOOOOO, .OOOOOOOOOOOOOOOO, OOO'));
+        console.log(chalk.bold.green('OOOOOOOOOOOOOOO, .OOOOOOOOOOOOOOOO, OOO00'));
         console.log(chalk.bold.green('OOOOOOOOOOOO, ~OOOOOOOOOOOOOOOOOO+    ,OO'));
-        console.log(chalk.bold.green('OOOOOOOOOO .OOOOOOOOOOOOOOOOOOOO         OO'));
-        console.log(chalk.bold.green('OOOOOOO, OOOOOOOOOOOOOOOOOOOOO:            OO'));
-        console.log(chalk.bold.green('OOOOO~ OOOOOOOOOOOOOOOOOOOOO+                OO'));
-        console.log(chalk.bold.green('OOOO OOOOOOOOOOOOOOOOOOOOO,                 IOO'));
-        console.log(chalk.bold.green('OO..OOOOOOOOOOOOOOOOOOOO                        OOO'));
-        console.log(chalk.bold.green('O,IOOOOOOOOOOOOOOOOO?                            OOOO'));
-        console.log(chalk.bold.green('O OOOOOOOOOOOOOOZ                                 ?OOOO'));
-        console.log(chalk.bold.green('O ZOOOOOOOOO~                                        ZOOOOO'));
-        console.log(chalk.bold.green('OO                                                            OOOOOOO'));
-        console.log(chalk.bold.green('OOO:                                                    OOOOOOOOO'));
-        console.log(chalk.bold.green('OOOOO                                             OOOOOOOOOOO'));
-        console.log(chalk.bold.green('OOOOOOO~                                 ZOOOOOOOOOOOOO'));
-        console.log(chalk.bold.green('OOOOOOOOOOO7.             ~OOOOOOOOOOOOOOOOOO'));
-        console.log(chalk.bold.green('OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO'));
-        console.log(chalk.bold.green('OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO'));
-        console.log(chalk.yellow("• ▌ ▄ ·. ▄▄▄ .▄▄▌                 ▐ ▄    ▐▄▄▄.▄▄ · "));
-        console.log(chalk.yellow("·██ ▐███▪▀▄.▀·██•    ▪         •█▌▐█    ·██▐█ ▀. "));
-        console.log(chalk.yellow("▐█ ▌▐▌▐█·▐▀▀▪▄██▪     ▄█▀▄ ▐█▐▐▌▪▄ ██▄▀▀▀█▄"));
-        console.log(chalk.yellow("██ ██▌▐█▌▐█▄▄▌▐█▌▐▌▐█▌.▐▌██▐█▌▐▌▐█▌▐█▄▪▐█"));
-        console.log(chalk.yellow("▀▀    █▪▀▀▀ ▀▀▀ .▀▀▀    ▀█▄▀▪▀▀ █▪ ▀▀▀• ▀▀▀▀ "));
+        console.log(chalk.bold.green('OOOOOOOOOO .OOOOOOOOOOOOOOOOOOOO       OO'));
+        console.log(chalk.bold.green('OOOOOOO, OOOOOOOOOOOOOOOOOOOOO:        OO'));
+        console.log(chalk.bold.green('OOOOO~ OOOOOOOOOOOOOOOOOOOOO+          OO'));
+        console.log(chalk.bold.green('OOOO OOOOOOOOOOOOOOOOOOOOO,            IO'));
+        console.log(chalk.bold.green('OO..OOOOOOOOOOOOOOOOOOOO               OO'));
+        console.log(chalk.bold.green('O,IOOOOOOOOOOOOOOOOO?                  OO'));
+        console.log(chalk.bold.green('O OOOOOOOOOOOOOOZ                      ?O'));
+        console.log(chalk.bold.green('O ZOOOOOOOOO~                          ZO'));
+        console.log(chalk.bold.green('OO                                     OO'));
+        console.log(chalk.bold.green('OOO:                                  OOO'));
+        console.log(chalk.bold.green('OOOOO                                OOOO'));
+        console.log(chalk.bold.green('OOOOOOO~                            ZOOOO'));
+        console.log(chalk.bold.green('OOOOOOOOOOO7.             ~OOOOOOOOOOOOOO'));
+        console.log(chalk.bold.green('OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO00'));
+        console.log(chalk.bold.green('OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO00'));
         console.log('Hi! It\'s time to build great games with MelonJS');
 
         var prompts = [
@@ -62,6 +57,7 @@ var MelonjsGenerator = yeoman.generators.Base.extend({
 
         this.prompt(prompts, function (props) {
             this.gameName = this._.slugify(props.gameName);
+            this.name = props.gameName;
 
             done();
         }.bind(this));
@@ -81,6 +77,7 @@ var MelonjsGenerator = yeoman.generators.Base.extend({
         this.copy('_package.json', this.gameName + '/package.json');
         this.copy('_bower.json', this.gameName + '/bower.json');
         this.copy('_Gruntfile.js', this.gameName + '/Gruntfile.js');
+        this.copy('_manifest.json', this.gameName + '/manifest.json');
     },
 
     projectfiles: function () {
@@ -96,6 +93,8 @@ var MelonjsGenerator = yeoman.generators.Base.extend({
         this.copy('js/debugPanel.js', this.gameName + '/js/debugPanel.js');
         this.copy('data/img/melonjs.png', this.gameName + '/data/img/melonjs.png');
         this.copy('data/img/bg.png', this.gameName + '/data/img/bg.png');
+        this.copy('data/img/icon-152x152.png', this.gameName + '/data/img/icon-152x152.png');
+        this.copy('data/img/icon-192x192.png', this.gameName + '/data/img/icon-192x192.png');
     }
 });
 
